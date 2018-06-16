@@ -1,16 +1,16 @@
-FROM node:stable as build-deps
+FROM node:alpine
 WORKDIR src/app
 COPY package.json yarn.lock ./
 RUN yarn
 COPY . ./
 RUN yarn build
 
-FROM nginx:stable
+FROM nginx:1.15-alpine
 
 MAINTAINER Team Coblerone <coblerone@dev.ch>
 
 RUN mkdir /etc/nginx/cert
-COPY --from=build-deps src/app/build /usr/share/nginx/html
+COPY --from=0 src/app/build /usr/share/nginx/html
 COPY cert/dev /etc/nginx/cert
 COPY default.conf /etc/nginx/conf.d/
 
