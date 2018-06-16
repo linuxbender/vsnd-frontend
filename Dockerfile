@@ -5,7 +5,7 @@ RUN yarn
 COPY . ./
 RUN yarn build
 
-FROM nginx:1.15-alpine
+FROM nginx:stable
 
 MAINTAINER Team Coblerone <coblerone@dev.ch>
 
