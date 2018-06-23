@@ -1,10 +1,4 @@
-[
-  {
-    "key": "global.title",
-    "value": "Hallo welt"
-  },
-  {
-    "key": "global.betragInCHF",
-    "value": "Betrag: {0} CHF"
-  }
-]
+{
+  "global.title": "Hallo welt",
+  "global.betragInCHF": "Betrag: {0} CHF"
+}

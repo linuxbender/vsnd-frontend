@@ -26,7 +26,7 @@ class App extends Component {
                     <h4> {i18('global.d', '42')} </h4>
                 }/>
                 <I18 translate={i18 =>
-                    <h4> {i18('global.e', ': Hi', ' - ', 'und 21')} </h4>
+                    <h4> {i18('global.e', 'Hallo', ' Welt ', '......42.......')} </h4>
                 }/>
                 <h2>Hello</h2>
             </div>

@@ -12,4 +12,4 @@ ReactDOM.render(<Provider store={store}><App/></Provider>, document.getElementBy
 registerServiceWorker();
 
 console.log(message);
-console.log(message.filter(i => i.key === 'global.title')[0].value);
+console.log(`AAAAAAAAAAAAAAAAA ${message['global.title']}`);
