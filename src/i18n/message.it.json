@@ -1,4 +1,9 @@
 {
-  "global.title": "Hallo welt",
-  "global.betragInCHF": "Betrag: {0} CHF"
+  "global.title": "it: Hallo welt",
+  "global.betragInCHF": "it: Betrag: {0} CHF",
+  "global.a": "it: Title A",
+  "global.b": "it: Title B",
+  "global.c": "it: Title C",
+  "global.d": "it: Title D {0}",
+  "global.e": "it: Title E,1-arg: {0}, 2-arg: {1}, 3-arg: {2}"
 }

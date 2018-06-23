@@ -1,9 +1,9 @@
 {
-  "global.title": "Hallo welt",
-  "global.betragInCHF": "Betrag: {0} CHF",
-  "global.a": "Title A",
-  "global.b": "Title B",
-  "global.c": "Title C",
-  "global.d": "Title D {0}",
-  "global.e": "Title E,1-arg: {0}, 2-arg: {1}, 3-arg: {2}"
+  "global.title": "de: Hallo welt",
+  "global.betragInCHF": "de: Betrag: {0} CHF",
+  "global.a": "de: Title A",
+  "global.b": "de: Title B",
+  "global.c": "de: Title C",
+  "global.d": "de: Title D {0}",
+  "global.e": "de: Title E,1-arg: {0}, 2-arg: {1}, 3-arg: {2}"
 }
