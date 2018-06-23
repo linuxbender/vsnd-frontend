@@ -1,8 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import './App.css';
-import Button from './components/Base/Button';
-import Header from './components/Base/Header';
-import I18 from './components/Base/I18';
+import Button from './components/Base/Button/Button';
+import Header from './components/Base/Header/Header';
+import I18 from './components/Base/i18n/I18';
 import Search from './components/form/Search';
 
 class App extends Component {

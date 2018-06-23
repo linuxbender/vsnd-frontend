@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import messageDe from '../../i18n/message.de';
+import messageDe from '../../../i18n/message.de';
 
 //const I18 = (props) => <Fragment>{props.translate(translationService)}</Fragment>;
 

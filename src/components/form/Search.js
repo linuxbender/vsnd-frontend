@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import Button from '../Base/Button';
+import Button from '../Base/Button/Button';
 
 class Search extends Component {
 
