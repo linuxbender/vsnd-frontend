@@ -15,6 +15,9 @@
 // Linear Layout
 .linearLayout {
   display: flex;
+  margin: 0;
+  padding: 0;
+
   &.vertical{
     flex-direction: column;
   }
@@ -29,6 +32,41 @@
     align-items: center;
     justify-content: center;
   }
+  &.second {
+    display: flex;
+    justify-content: space-between;
+    .item{
+      flex: 0 0 50%;
+    }
+  }
+  &.thirds {
+    display: flex;
+    justify-content: space-between;
+    .item{
+      flex: 0 0 33.3333%;
+    }
+  }
+  &.quarter {
+    display: flex;
+    justify-content: space-between;
+    .item{
+      flex: 0 0 25%;
+    }
+  }
+  &.fifth {
+    display: flex;
+    justify-content: space-between;
+    .item{
+      flex: 0 0 20%;
+    }
+  }
+  &.sixth {
+    display: flex;
+    justify-content: space-between;
+    .item{
+      flex: 0 0 16.6666%;
+    }
+  }
   .item {
     flex: 1;
     &.right {
@@ -42,11 +80,9 @@
     }
   }
 }
-header {
-}
-nav {
+
+body {
   padding: 2px 0;
-  height: 36px;
 }
 
 .App {
