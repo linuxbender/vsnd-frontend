@@ -1,3 +1,54 @@
+// colors
+.background-red {
+  background-color: palevioletred;
+}
+.background-orange {
+  background-color: orange;
+}
+.background-greenYellow {
+  background-color: greenyellow;
+}
+.background-green {
+  background-color: green;
+}
+
+// Linear Layout
+.linearLayout {
+  display: flex;
+  &.vertical{
+    flex-direction: column;
+  }
+  &.horizontal {
+    flex-direction: row;
+  }
+  &.right {
+    text-align: right;
+    justify-content: flex-end;
+  }
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+  .item {
+    flex: 1;
+    &.right {
+      text-align: right;
+    }
+    &.left {
+      text-align: left;
+    }
+    &.center {
+      text-align: center;
+    }
+  }
+}
+header {
+}
+nav {
+  padding: 2px 0;
+  height: 36px;
+}
+
 .App {
   text-align: center;
 }
@@ -25,4 +76,10 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
 }
