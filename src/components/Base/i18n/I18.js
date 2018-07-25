@@ -9,7 +9,7 @@ class I18 extends Component {
         return item || '';
     };
     render() {
-        return (<Fragment>{this.props.translate(this.translationService)}</Fragment>);
+        return (this.props.render(this.translationService));
     }
 }
 
