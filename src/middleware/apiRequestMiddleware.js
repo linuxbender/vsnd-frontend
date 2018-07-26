@@ -12,6 +12,13 @@ const onErrorHandler = (dispatch, actionType, error) => {
     dispatch(hideUiLoader());
 };
 
+const statusAndDataHandler = response => {
+    if(!response.ok) {
+        response.json().then(data => Promise.reject(data));
+    }
+    return response.json();
+};
+
 const apiRequest = ({dispatch}) => next => action => {
 
     if (action.type === API_REQUEST) {
@@ -24,7 +31,7 @@ const apiRequest = ({dispatch}) => next => action => {
             switch (method) {
                 case HTTP_GET:
                     return fetch(url, {method: method, headers: HTTP_HEADER_DEFAULT})
-                        .then(response => response.json())
+                        .then(statusAndDataHandler)
                         .then(response => {
                             onSuccessHandler(dispatch, onSuccess, response);
                         })
@@ -38,7 +45,7 @@ const apiRequest = ({dispatch}) => next => action => {
                         body: JSON.stringify(action.data),
                         headers: HTTP_HEADER_WITH_REQUEST_BODY
                     })
-                        .then(response => response.json())
+                        .then(statusAndDataHandler)
                         .then(response => {
                             onSuccessHandler(dispatch, onSuccess, response);
                         })
