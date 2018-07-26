@@ -10,31 +10,31 @@ describe('Header', () => {
         mountedHeader = shallow(<Header/>)
     });
 
-    it('renders without crashing', () => {
+    test('renders without crashing', () => {
         shallow(<Header/>);
     });
 
-    it('renders a Header', () => {
+    test('renders a Header', () => {
         const header = mountedHeader.find('header');
         expect(header.length).toBe(1);
     });
 
-    it('header has a img with alt text "logo"', () => {
+    test('header has a img with alt text "logo"', () => {
         const header = mountedHeader.find('img [alt="logo"]');
         expect(header.length).toBe(1);
     });
 
-    it('display an image in the header', () => {
+    test('display an image in the header', () => {
         const header = mountedHeader.find('img [src="logo.svg"]');
         expect(header.length).toBe(1);
     });
 
-    it('display h1 with the class name app-intro', () => {
+    test('display h1 with the class name app-intro', () => {
         const header = mountedHeader.find('h1 [className="App-title"]');
         expect(header.length).toBe(1);
     });
 
-    it('display h1 with the text "Welcome to React"', () => {
+    test('display h1 with the text "Welcome to React"', () => {
         const displayText = 'Welcome to React';
         const header = mountedHeader.find('h1');
         expect(header.text()).toBe(displayText);
